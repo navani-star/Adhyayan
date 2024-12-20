@@ -1,0 +1,52 @@
+{
+  "students": [
+    {
+      "fname": "Hitesh",
+      "lname": "Nawani",
+      "mname": "AAA",
+      "Fname": "AAA",
+      "address": "AAA",
+      "gender": "Male",
+      "course": "HTML",
+      "fees": "20000",
+      "dob": "AAA",
+      "pincode": "AAAA",
+      "Course": "AAAA",
+      "email": "hitu@gmail.com",
+      "password": "Admin@123",
+      "id": "7c46"
+    },
+    {
+      "fname": "Jay",
+      "lname": "Nawani",
+      "mname": "AAAA",
+      "Fname": "AAA",
+      "address": "AAAA",
+      "gender": "Male",
+      "course": "NODEJS",
+      "fees": "35000",
+      "dob": "AAAA",
+      "pincode": "AAAA",
+      "Course": "",
+      "email": "jay@1997",
+      "password": "Jay@123",
+      "id": "bed4"
+    },
+    {
+      "fname": "Jay",
+      "lname": "Nawani",
+      "mname": "BBB",
+      "Fname": "BBB",
+      "address": "BBB",
+      "gender": "Male",
+      "course": "REACT",
+      "fees": "40000",
+      "dob": "BBB",
+      "pincode": "425108",
+      "Course": "",
+      "email": "Admin@123",
+      "password": "Admin@123",
+      "id": "357b"
+    }
+  ]
+}
