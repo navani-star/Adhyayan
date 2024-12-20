@@ -23,21 +23,28 @@ const Studentlogout = ({onLogout,student}) => {
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <td>{student.fname}</td>
-              <td>{student.lname}</td>
-              <td>{student.mname}</td>
-              <td>{student.Fname}</td>
-              <td>{student.address}</td>
-              <td>{student.gender}</td>
-              <td>{student.course}</td>
-              <td>{student.fees}</td>
-              <td>{student.dob}</td>
-              <td>{student.pincode}</td>
-              <td>{student.course}</td>
-              <td>{student.email}</td>
-              <td>{student.password}</td>
-            </tr>
+            {
+              student.map((stu,index)=>{
+                return(
+                  <tr key={index}>
+                  <td>{stu.fname}</td>
+                  <td>{stu.lname}</td>
+                  <td>{stu.mname}</td>
+                  <td>{stu.Fname}</td>
+                  <td>{stu.address}</td>
+                  <td>{stu.gender}</td>
+                  <td>{stu.course}</td>
+                  <td>{stu.fees}</td>
+                  <td>{stu.dob}</td>
+                  <td>{stu.pincode}</td>
+                  <td>{stu.Course}</td>
+                  <td>{stu.email}</td>
+                  <td>{stu.password}</td>
+                </tr>
+                )
+              })
+            }
+           
           </tbody>
          </table>
         <div className='text-center mt-5 mb-5'>

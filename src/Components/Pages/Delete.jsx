@@ -40,7 +40,7 @@ const Delete = () => {
          <h2>Student Email:-{student.email}</h2>
         </div>
         <div className='ms-5'> 
-          <h2>Student Course:-{student.course}</h2>
+          <h2>Student Course:-{student.Course}</h2>
         </div>
         <div className='ms-5'>
             <button className='btn btn-danger me-3' onClick={deleteDATA}>Yes</button>

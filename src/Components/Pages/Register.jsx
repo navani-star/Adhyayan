@@ -86,7 +86,7 @@ const Register = () => {
                           <div className="col-md-6 mb-4">
                             <div data-mdb-input-init className="form-outline">
                               <input type="text" id="form3Example1m1" className="form-control form-control-lg" {...register('mname', {
-                                required: 'Mother Name is Entered',
+                                required: 'Mother Name Entered',
                                 pattern: {
                                   value: /^[A-Za-z]+$/,
                                   message: 'Only Alphabets are Valid'
@@ -117,8 +117,17 @@ const Register = () => {
                         </div>
 
                         <div data-mdb-input-init className="form-outline mb-4">
-                          <input type="text" id="form3Example8" className="form-control form-control-lg" {...register('address')} />
+                          <input type="text" id="form3Example8" className="form-control form-control-lg" {...register('address', {
+                            required: 'Enter Address Here',
+                            pattern: {
+                              value: /^[A-Za-z/]+$/,
+                              message: 'Alphabets And Number Valid'
+                            }
+                          })} />
                           <label className="form-label" for="form3Example8">Address</label>
+                          {
+                            errors.address && <p className='text-danger'>{errors.address.message}</p>
+                          }
                         </div>
 
                         <div className="d-md-flex justify-content-start align-items-center mb-4 py-2">
@@ -178,7 +187,7 @@ const Register = () => {
                         </div>
 
                         <div data-mdb-input-init className="form-outline mb-4">
-                          <input type="text" id="form3Example99" className="form-control form-control-lg" {...register('Course')} />
+                          <input type="text" id="form3Example99" className="form-control form-control-lg" {...register('Course') }/>
                           <label className="form-label" for="form3Example99">Course</label>
                         </div>
 

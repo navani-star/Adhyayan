@@ -23,7 +23,7 @@ const Update = () => {
         setValue('fname', respones.data.fname)
         setValue('dob', respones.data.dob)
         setValue('pincode', respones.data.pincode)
-        setValue('course', respones.data.course)
+        setValue('course', respones.data.Courses)
         setValue('email', respones.data.email)
         setValue('password',respones.data.password)
     }

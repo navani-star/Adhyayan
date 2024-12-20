@@ -4,15 +4,15 @@ import Studentlogout from './Studentlogout'
 const Studentlogin = () => {
     const [email, setemail] = useState('')
     const [password, setpassword] = useState('')
-    const [loggedIn, setloggedIn] = useState()
+    const [loggedIn, setloggedIn] = useState([])
 
     const handleLogin = async () => {
         const response = await axios.get('http://localhost:8005/students')
         const result = response.data
 
-        const stuLogin = result.find((stu) => stu.email === email && stu.password === password)
+        const stuLogin = result.filter((stu) => stu.email === email && stu.password === password)
 
-        if (stuLogin) {
+        if (stuLogin.length>0) {
             setloggedIn(stuLogin)
             alert('Student Login Successful...')
         }
@@ -24,12 +24,12 @@ const Studentlogin = () => {
        
     }
     const hanleLogout = () => {
-        setloggedIn()
+        setloggedIn([])
         setemail('')
         setpassword('')
 
     }
-    if (loggedIn) {
+    if (loggedIn.length>0) {
         return <Studentlogout  student={loggedIn} onLogout={hanleLogout}/>
     }
     return (
@@ -58,5 +58,4 @@ const Studentlogin = () => {
         </div>
     )
 }
-
 export default Studentlogin
