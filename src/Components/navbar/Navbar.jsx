@@ -11,19 +11,19 @@ const Navbar = () => {
                     </button>
                     <div className="w-5 me-5" id="navbarNav">
                         <ul className="navbar-nav">
-                            <li className="nav-item ms-3 ">
+                            <li className="nav-item ms-3 fs-2">
                                 <NavLink className="btn btn-primary" aria-current="page" to='/home'>Home</NavLink>
                             </li>
-                            <li className="nav-item ms-3 ">
+                            <li className="nav-item ms-3 fs-2">
                                 <NavLink className="btn btn-success " to='/admin'>Admin</NavLink>
                             </li>
-                            <li className="nav-item ms-3 ">
+                            <li className="nav-item ms-3 fs-2">
                                 <NavLink className="btn btn-warning " to='/about'>About</NavLink>
                             </li>
-                            <li className="nav-item ms-3 ">
+                            <li className="nav-item ms-3 fs-2">
                                 <NavLink className="btn btn-secondary" to='/career'>Career</NavLink>
                             </li>
-                            <li className="nav-item ms-3 ">
+                            <li className="nav-item ms-3 fs-2">
                                 <NavLink className="btn btn-info" to='/Studentlogin'>Log In</NavLink>
                             </li>
                         </ul>
