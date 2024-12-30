@@ -1,7 +1,7 @@
 import axios from 'axios'
 import React, { useEffect } from 'react'
 import { useForm } from 'react-hook-form'
-import { data, useNavigate, useParams } from 'react-router-dom'
+import { data,useNavigate,useParams} from 'react-router-dom'
 import { useState } from 'react'
 
 const Update = () => {
@@ -37,7 +37,7 @@ const Update = () => {
         navigate('/Student')
 
     }
-    const [course, setcourse] = useState('')
+    const [course,setcourse] = useState('')
 
     const courses = {
         HTML: '20000',

@@ -1,6 +1,5 @@
 import React from 'react'
 const Studentlogout = ({onLogout,student}) => {
-  console.log(student)
   return (
     <div>
          <h2 className='mt-3 mb-3 text-center text-secondary'>Student Details:-</h2>

@@ -33,6 +33,7 @@ const Studentdata = () => {
   }
   const searchNameHandler= student.filter((stu)=>{
     return stu.course.toLowerCase().includes(searchName.toLowerCase())
+   
   })
 
   return (

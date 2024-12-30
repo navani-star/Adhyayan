@@ -14,12 +14,14 @@ import Update from './Components/Pages/Update.jsx';
 import Footer from './Components/Footer/Footer.jsx';
 import Delete from './Components/Pages/Delete.jsx';
 import Studentlogin from './Components/Pages/Studentlogin.jsx';
+
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
       <Navbar/>
       <Routes>
+        <Route path='/' element={<Home/>}/>
         <Route path='/home' element={<Home/>}/>
         <Route path='/about' element={<About/>}/>
         <Route path='/career' element={<Career/>}/>
